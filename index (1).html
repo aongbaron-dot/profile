@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | รัฐศาสตร์ สีสวาท</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&family=Mali:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+    <div id="cursor-stars" aria-hidden="true"></div>
+
+    <header class="navbar">
+        <div class="container nav-content">
+            <div class="brand">Ratthasas</div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section hero section-observe">
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1 class="headline">Welcome to Ratthasas's Portfolio</h1>
+                    <h2 class="subhead">รัฐศาสตร์ สีสวาท</h2>
+                    <p class="tagline">A young developer with a passion for football and coding.</p>
+                    <a class="btn primary" href="#portfolio">ดูผลงานของฉัน</a>
+                </div>
+                <div class="hero-visual" aria-hidden="true">
+                    <div class="bubble bubble-1"></div>
+                    <div class="bubble bubble-2"></div>
+                    <div class="bubble bubble-3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section section-observe">
+            <div class="container grid two">
+                <div class="about-card card">
+                    <h3>About Me</h3>
+                    <p>สวัสดีครับ ผมชื่อ รัฐศาสตร์ สีสวาท กำลังพัฒนาทักษะด้านการเขียนโปรแกรม และชื่นชอบกีฬาฟุตบอล ชอบสร้างสิ่งใหม่ๆ ที่ทั้งน่ารักและมีประโยชน์</p>
+                    <ul class="info">
+                        <li><strong>ชื่อ:</strong> รัฐศาสตร์ สีสวาท</li>
+                        <li><strong>อายุ:</strong> 18 ปี</li>
+                        <li><strong>วันเกิด:</strong> 11 ธันวาคม 2549</li>
+                        <li><strong>ที่อยู่:</strong> 52 หมู่ 13 ต.บางงา อ.ท่าวุ้ง จ.ลพบุรี 15150</li>
+                    </ul>
+                </div>
+                <div class="about-photo card">
+                    <img src="img/1.jpg" alt="Profile of Ratthasas" />
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section section-observe">
+            <div class="container">
+                <h3 class="section-title">Education</h3>
+                <div class="timeline-wrapper card">
+                    <button class="scroll-btn left" aria-label="scroll left">◀</button>
+                    <div class="timeline" tabindex="0" aria-label="Education timeline (horizontal scroll)">
+                        <div class="milestone" data-title="ป.6 โรงเรียนวัดหนองมน" data-year="พ.ศ. 2562" data-img="img/2.jpg" data-desc="จบการศึกษาชั้นประถมศึกษาปีที่ 6 จากโรงเรียนวัดหนองมน">
+                            <img src="img/2.jpg" alt="โรงเรียนวัดหนองมน" class="milestone-img" />
+                            <span class="dot"></span>
+                            <span class="label">2562</span>
+                        </div>
+                        <div class="milestone" data-title="ม.3 โรงเรียนท่าวุ้งวิทยาคาร" data-year="พ.ศ. 2565" data-img="img/3.jpg" data-desc="จบการศึกษาชั้นมัธยมศึกษาปีที่ 3 จากโรงเรียนท่าวุ้งวิทยาคาร">
+                            <img src="img/3.jpg" alt="โรงเรียนท่าวุ้งวิทยาคาร ม.3" class="milestone-img" />
+                            <span class="dot"></span>
+                            <span class="label">2565</span>
+                        </div>
+                        <div class="milestone" data-title="ม.6 วิทยาลัยเทคนิคลพบุรี" data-year="พ.ศ. 2568" data-img="img/4.png" data-desc="จบการศึกษาชั้นมัธยมศึกษาปีที่ 6 จากวิทยาลัยเทคนิคลพบุรี">
+                            <img src="img/4.png" alt="โรงเรียนท่าวุ้งวิทยาคาร ม.6" class="milestone-img" />
+                            <span class="dot"></span>
+                            <span class="label">2568</span>
+                        </div>
+                    </div>
+                    <button class="scroll-btn right" aria-label="scroll right">▶</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="section section-observe">
+            <div class="container">
+                <h3 class="section-title">My Portfolio</h3>
+                <div class="grid portfolio-grid">
+                    <article class="work card" data-title="Cute Landing Page" data-desc="เขียนฐานข้อมูล ต่างๆ" data-img="img/a.jpg">
+                        <img src="img/a.jpg" alt="Work 1" />
+                        <div class="work-meta">
+                            <h4>SQL data Base</h4>
+                            <p>เขียนฐานข้อมูล ต่างๆ.</p>
+                        </div>
+                    </article>
+                    <article class="work card" data-title="Football Stats Widget" data-desc="เขียนฐานข้อมูล ต่างๆ" data-img="img/b.jpg">
+                        <img src="img/b.jpg" alt="Work 2" />
+                        <div class="work-meta">
+                            <h4>SQL data Base</h4>
+                            <p>เขียนฐานข้อมูล ต่างๆ.</p>
+                        </div>
+                    </article>
+                    <article class="work card" data-title="Portfolio Grid" data-desc="เขียนฐานข้อมูล ต่างๆ" data-img="img/c.jpg">
+                        <img src="img/c.jpg" alt="Work 3" />
+                        <div class="work-meta">
+                            <h4>SQL data Base</h4>
+                            <p>เขียนฐานข้อมูล ต่างๆ.</p>
+                        </div>
+                    </article>
+                    <article class="work card" data-title="Bubble Animation" data-desc="เขียนฐานข้อมูล ต่างๆ" data-img="img/d.jpg">
+                        <img src="img/d.jpg" alt="Work 4" />
+                        <div class="work-meta">
+                            <h4>SQL data Base</h4>
+                            <p>เขียนฐานข้อมูล ต่างๆ.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section section-observe">
+            <div class="container">
+                <h3 class="section-title">My Skills</h3>
+                <div class="grid three skills-grid">
+                    <div class="skill card">
+                        <div class="icon">⚽</div>
+                        <h4>Sports</h4>
+                        <p>Football</p>
+                        <div class="progress" data-value="85">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <div class="skill card">
+                        <div class="icon"></div>
+                        <h4>Technical</h4>
+                        <p>Basic Coding (HTML, CSS, JS)</p>
+                        <div class="circle" data-value="70">
+                            <svg viewBox="0 0 100 100">
+                                <circle class="bg" cx="50" cy="50" r="42" />
+                                <circle class="fg" cx="50" cy="50" r="42" />
+                            </svg>
+                            <span class="percent">0%</span>
+                        </div>
+                    </div>
+                    <div class="skill card">
+                        <div class="icon">💻</div>
+                        <h4>Playful Tech</h4>
+                        <p>UI effects & animations</p>
+                        <div class="progress" data-value="75">
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-observe">
+            <div class="container grid two contact-grid">
+                <div class="card">
+                    <h3 class="section-title">Get In Touch</h3>
+                    <ul class="contact-list">
+                        <li><strong>เบอร์ติดต่อ:</strong> 098-943-0944</li>
+                        <li>
+                            <a class="social fb" href="https://www.facebook.com/Ratthasas.Seesawat" target="_blank" rel="noopener">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="social ig" href="https://www.instagram.com/ratthasas.06" target="_blank" rel="noopener">Instagram</a>
+                        </li>
+                    </ul>
+                </div>
+                <form class="card contact-form" id="contactForm">
+                    <div class="field">
+                        <label for="name">ชื่อ</label>
+                        <input type="text" id="name" name="name" placeholder="ชื่อของคุณ" required />
+                    </div>
+                    <div class="field">
+                        <label for="email">อีเมล</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required />
+                    </div>
+                    <div class="field">
+                        <label for="message">ข้อความ</label>
+                        <textarea id="message" name="message" rows="4" placeholder="พิมพ์ข้อความที่นี่..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary submit-btn">
+                        <span class="btn-label">Send</span>
+                        <span class="btn-success">✓ Sent!</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="false">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-content card">
+            <button class="modal-close" aria-label="close" data-close>✕</button>
+            <img id="modal-img" src="" alt="preview" />
+            <div class="modal-text">
+                <h4 id="modal-title"></h4>
+                <p id="modal-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="edu-modal" aria-hidden="true" role="dialog" aria-modal="false">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-content card">
+            <button class="modal-close" aria-label="close" data-close>✕</button>
+            <img id="edu-img" src="" alt="school" />
+            <div class="modal-text">
+                <h4 id="edu-title"></h4>
+                <p id="edu-year"></p>
+                <p id="edu-desc"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
